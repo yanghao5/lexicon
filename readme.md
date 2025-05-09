@@ -52,7 +52,28 @@ class MataData:
 ## 示例
 
 ```json
-[]
+[
+    {
+        "token": "但为君故",
+        "encode": [
+            ["dan","wei","jun","gu"]
+        ],
+        "error_encode": [],
+        "textfreq": 0,
+        "pronfreq": [0],
+        "note": ""
+    },
+    {
+        "token": "沉吟至今",
+        "encode": [
+            ["chen","yin","zhi","jin"]
+        ],
+        "error_encode": [],
+        "textfreq": 0,
+        "pronfreq": [0],
+        "note": ""
+    }
+]
 ```
 
 # 词库一览（experimental）
