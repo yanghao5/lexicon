@@ -20,6 +20,41 @@
 
 **词库的使用具有边际效应，并不是越大越好，适合自己的才是最好的**
 
+## 词库文件结构
+
+- 词库使用 json 文本存储数据.
+- 每一个 json 存储一个数组
+- 数组元素格式，参考以下 go 或 py 代码
+
+go
+```go
+type MataData struct {
+	Token         string     `json:"token"` \\ 对应的文本
+	Encode        [][]string `json:"encode"` \\ 对应的拼音编码
+	ErrorEncode   [][]string `json:"error_encode"` \\ 某些错误拼音
+	TextFrequency float64    `json:"textfreq"` \\ token 在文本出现的频率
+	PronFrequency []float64  `json:"pronfreq"` \\ token 的发音频率，对应 Encode 中的编码
+	Note          string     `json:"note"` \\ 备注
+}
+```
+py
+```py
+class MataData:
+    def __init__(self, token, encode, error_encode, textfreq, pronfreq, note):
+        self.token = token
+        self.encode = encode              
+        self.error_encode = error_encode  
+        self.textfreq = textfreq         
+        self.pronfreq = pronfreq          
+        self.note = note
+
+```
+## 示例
+
+```json
+[]
+```
+
 # 词库一览（experimental）
 
 | 词库名       | 介绍                                     |
