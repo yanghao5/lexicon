@@ -21,7 +21,17 @@
 
 # 码表说明（experimental）
 
-等待更新
+```go
+type MataData struct {
+	Token         string     `json:"token"` \\ 汉字对应的文本
+	Unicode       [][]string `json:"unicode"` \\ 汉字所对应的 Unicode
+	Encode        [][]string `json:"encode"` \\ 对应的编码（全拼，86，98，拆字，笔画，辅助码）
+	ErrorEncode   [][]string `json:"error_encode"` \\ 某些错误编码（仅在 全拼 和 98 提供，其他编码为空）
+	TextFrequency float64    `json:"textfreq"` \\ token 在文本出现的频率
+	PronFrequency []float64  `json:"pronfreq"` \\ token 的发音频率，对应 Encode 中的编码（仅在全拼中提供，其他为空）
+	Note          string     `json:"note"` \\ 备注
+}
+```
 
 # 词库说明（experimental）
 
