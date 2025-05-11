@@ -30,6 +30,22 @@
 
 这个汉字表会随着字体的更新而更新.
 
+```
+# 当前汉字集所涵盖的字体
+
+# 安卓 思源黑体 
+Fonts Version 2.004R
+https://github.com/adobe-fonts/source-han-sans 
+
+# 苹果 苹方
+Fonts Version 19.0d5e3
+https://developer.apple.com/fonts/system-fonts/
+
+# 微软雅黑
+Fonts Version 6.25
+https://learn.microsoft.com/en-us/typography/fonts/windows_11_font_list
+```
+
 **为什么要这么做？**
 
 汉字的显示需要字体的支持.
@@ -39,6 +55,7 @@
 所以，我们需要一个在主流电子设备中，能正常显示的汉字集合.
 
 而不是为了追求大而全，把 Unicode 标准中的所有汉字搞到一起.
+
 
 
 
