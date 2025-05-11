@@ -18,7 +18,14 @@
 - 生成可供 AI 训练的，文本和拼音对应的语料
 - 将数据同步到 huggingface
 
-全部更新，计划预计将于 2025 年年底完成
+全部更新，计划预计将于 2025 年年底完成.
+
+在此之前，你可以使用旧版本.
+
+```
+git clone https://github.com/yanghao5/lexicon.git
+git checkout 44a62328996be19c6d2d5383a8713bcf8971054b
+```
 
 # 码表说明（experimental）
 
