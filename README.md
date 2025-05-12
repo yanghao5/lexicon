@@ -26,7 +26,6 @@
 git clone https://github.com/yanghao5/lexicon.git
 git checkout 44a62328996be19c6d2d5383a8713bcf8971054b
 ```
-
 # 码表说明（experimental）
 
 码表部分包含，汉字集，常用汉字集，全拼码表，86五笔码表，98五笔码表，笔画码表，小鹤辅助码，自然码辅助码，拆字码表
@@ -73,8 +72,13 @@ https://learn.microsoft.com/en-us/typography/fonts/windows_11_font_list
 
 而不是为了追求大而全，把 Unicode 标准中的所有汉字搞到一起.
 
+## 字体安装
 
+为了显示码表中所有的汉字集合，你需要额外安装字体
 
+```
+https://kamichikoichi.github.io/jigmo/
+```
 
 ## 结构
 ```go
